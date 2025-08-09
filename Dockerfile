@@ -1,9 +1,10 @@
 # Step 1: Build
-FROM node:18 AS build
+FROM node:20 AS build
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm ci --no-audit --no-fund
 COPY . .
+ENV CI=true
 RUN npm run build
 
 # Step 2: Serve with Nginx
