@@ -29,6 +29,7 @@ function App() {
         Click on the Vite and React logos to learn more now and 
         now
       </p>
+      <p className='read-the-docs'>Tesing CI/CD deployment</p>
     </>
   )
 }
