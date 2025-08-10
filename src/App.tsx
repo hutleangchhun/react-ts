@@ -30,6 +30,7 @@ function App() {
         now
       </p>
       <p className='read-the-docs'>Tesing CI/CD deployment</p>
+      <p className='read-the-docs'>Improving CI/CD deployment</p>
     </>
   )
 }
