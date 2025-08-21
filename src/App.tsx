@@ -1,15 +1,11 @@
-import './App.css'
+import { AuthProvider } from './contexts/AuthContext'
+import { AppContent } from './components/layout/AppContent'
 
 function App() {
   return (
-    <div className="fireworks-container">
-      <div className="firework"></div>
-      <div className="firework"></div>
-      <div className="firework"></div>
-      <div className="firework"></div>
-      <div className="firework"></div>
-      <div className="firework"></div>
-    </div>
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
   )
 }
 
